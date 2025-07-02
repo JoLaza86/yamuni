@@ -1,0 +1,258 @@
+/* Fuente Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Montserrat", sans-serif; */
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Header */
+header {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.navbar .nav-link {
+  color: #0457A5 !important;
+  font-weight: 500;
+}
+
+.nav-link.active {
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%230257A5' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Main */
+
+.main-principal {
+  padding-top: 60px;
+}
+
+@media (min-width: 768px) {
+  .main-principal {
+    padding-top: 80px;
+  }
+}
+
+/* Hero Section Home */
+.hero {
+  background-image: url('../asset/Ingredion_pagina_hero.webp');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: flex-start;
+  color: white;
+  padding-left: 4rem;
+  padding-right: 2rem;
+}
+
+.hero-contenedor {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+  margin-block: auto;
+  padding-left: 4rem;
+}
+
+.grupo-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+
+@media (min-width: 992px) {
+  .hero-contenedor {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+/* Hero section Home - Responsive */
+@media (max-width: 991.98px) {
+  .hero-contenedor {
+    align-items: center;
+    padding: 0;
+    text-align: center;
+  }
+
+  .hero {
+    background-image: url('../asset/yamuni_ingredion.webp');
+    justify-content: center;
+  }
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.boton-contactanos {
+  display: block;
+  width: 100%;
+  background-color: #3BA348;
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 2rem;
+  border-radius: 5px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.boton-contactanos:hover {
+  background-color: #014080;
+}
+
+/* Div Quienes somos */
+.quienes-somos {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+.quienes-somos img {
+  margin-bottom: 3rem;
+}
+
+.quienes-somos h1,
+.quienes-somos h2,
+.quienes-somos p {
+  text-align: center;
+}
+
+/* Servicios */
+
+.servicios {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.servicio {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  gap: 2rem; 
+}
+
+.servicio .texto,
+.servicio .imagen {
+  flex: 1; 
+}
+
+.servicio .imagen img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.fondo-gris {
+  background-color: #f0f0f0;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.fila.invertida {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+  .servicio {
+    flex-direction: column;
+  }
+
+  .servicio .imagen,
+  .servicio .texto {
+    flex: unset;
+    width: 100%;
+  }
+
+  .servicio .imagen img {
+    border-radius: 0;
+  }
+}
+
+/* Formulario pagina contacto */
+.formulario-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap; 
+}
+
+.formulario-texto,
+.formulario-imagen {
+  flex: 1 1 400px; 
+}
+
+.formulario-imagen img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+
+/* footer */
+footer {
+  background-color: #3BA348;
+  color: white;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 20px 40px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.footer-icon {
+  color: white;
+  width: 24px;
+  height: auto;
+  gap: 8px;
+}
+
+footer .datos {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.footer-container {
+  display: flex;
+  align-items: flex-end;
+  text-decoration: none;
+  flex-direction: column;
+  gap: 4px;
+}
+
+footer p {
+  color: white;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: white;
+}
