@@ -1,0 +1,64 @@
+.hero {
+  background-image: url('../asset/Ingredion_pagina_hero.webp');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: flex-start;
+  color: white;
+  padding-left: 4rem;
+  padding-right: 2rem;
+}
+
+.hero-contenedor {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+  margin-block: auto;
+  padding-left: 4rem;
+}
+
+.grupo-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+
+@media (min-width: 992px) {
+  .hero-contenedor {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+/* Hero section Home - Responsive */
+@media (max-width: 991.98px) {
+  .hero-contenedor {
+    align-items: center;
+    padding: 0;
+    text-align: center;
+  }
+
+  .hero {
+    background-image: url('../asset/yamuni_ingredion.webp');
+    justify-content: center;
+  }
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+}

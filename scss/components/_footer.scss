@@ -1,0 +1,38 @@
+footer {
+  background-color: #3BA348;
+  color: white;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 20px 40px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.footer-icon {
+  color: white;
+  width: 24px;
+  height: auto;
+  gap: 8px;
+}
+
+footer .datos {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.footer-container {
+  display: flex;
+  align-items: flex-end;
+  text-decoration: none;
+  flex-direction: column;
+  gap: 4px;
+}
+
+footer p {
+  color: white;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: white;
+}

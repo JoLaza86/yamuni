@@ -1,0 +1,51 @@
+.servicios {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.servicio {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  gap: 2rem;
+}
+
+.servicio .texto,
+.servicio .imagen {
+  flex: 1;
+}
+
+.servicio .imagen img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.fondo-gris {
+  background-color: #f0f0f0;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.fila.invertida {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+  .servicio {
+    flex-direction: column;
+  }
+
+  .servicio .imagen,
+  .servicio .texto {
+    flex: unset;
+    width: 100%;
+  }
+
+  .servicio .imagen img {
+    border-radius: 0;
+  }
+}

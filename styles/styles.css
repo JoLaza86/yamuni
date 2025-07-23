@@ -1,36 +1,7 @@
-/* Fuente Montserrat */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-/* font-family: "Montserrat", sans-serif; */
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 body {
   font-family: "Montserrat", sans-serif;
 }
-
-/* Header */
-header {
-  font-weight: 500;
-  font-size: 1rem;
-}
-
-.navbar .nav-link {
-  color: #0457A5 !important;
-  font-weight: 500;
-}
-
-.nav-link.active {
-  font-weight: bold;
-}
-
-.navbar-toggler {
-  border: none !important;
-  box-shadow: none !important;
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%230257A5' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
-/* Main */
 
 .main-principal {
   padding-top: 60px;
@@ -41,14 +12,11 @@ header {
     padding-top: 80px;
   }
 }
-
-/* Hero Section Home */
 .hero {
-  background-image: url('../asset/Ingredion_pagina_hero.webp');
+  background-image: url("../asset/Ingredion_pagina_hero.webp");
   background-size: cover;
   background-position: center;
   min-height: 100vh;
-
   display: flex;
   justify-content: flex-start;
   color: white;
@@ -73,15 +41,12 @@ header {
   gap: 1rem;
 }
 
-
-
 @media (min-width: 992px) {
   .hero-contenedor {
     align-items: flex-start;
     text-align: left;
   }
 }
-
 /* Hero section Home - Responsive */
 @media (max-width: 991.98px) {
   .hero-contenedor {
@@ -89,13 +54,11 @@ header {
     padding: 0;
     text-align: center;
   }
-
   .hero {
-    background-image: url('../asset/yamuni_ingredion.webp');
+    background-image: url("../asset/yamuni_ingredion.webp");
     justify-content: center;
   }
 }
-
 .hero h1 {
   font-size: 3rem;
   font-weight: 700;
@@ -120,11 +83,32 @@ header {
   text-align: center;
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.boton-contactanos {
+  animation: fadeInUp 1s ease-out 0.3s both;
+}
+
 .boton-contactanos:hover {
   background-color: #014080;
 }
 
-/* Div Quienes somos */
+.btn {
+  background-color: #3BA348;
+  border-color: #3BA348;
+  padding-left: 120px;
+  padding-right: 120px;
+  align-items: center;
+}
+
 .quienes-somos {
   margin-bottom: 3rem;
   margin-top: 3rem;
@@ -140,8 +124,6 @@ header {
   text-align: center;
 }
 
-/* Servicios */
-
 .servicios {
   max-width: 1200px;
   margin: 0 auto;
@@ -152,12 +134,12 @@ header {
   display: flex;
   align-items: center;
   margin-bottom: 3rem;
-  gap: 2rem; 
+  gap: 2rem;
 }
 
 .servicio .texto,
 .servicio .imagen {
-  flex: 1; 
+  flex: 1;
 }
 
 .servicio .imagen img {
@@ -182,31 +164,28 @@ header {
   .servicio {
     flex-direction: column;
   }
-
   .servicio .imagen,
   .servicio .texto {
     flex: unset;
     width: 100%;
   }
-
   .servicio .imagen img {
     border-radius: 0;
   }
 }
-
-/* Formulario pagina contacto */
 .formulario-container {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2rem;
   padding: 2rem;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .formulario-texto,
 .formulario-imagen {
-  flex: 1 1 400px; 
+  flex: 1 1 400px;
+  min-width: 300px;
 }
 
 .formulario-imagen img {
@@ -216,8 +195,6 @@ header {
   display: block;
 }
 
-
-/* footer */
 footer {
   background-color: #3BA348;
   color: white;
@@ -256,3 +233,5 @@ footer p {
   text-decoration: none;
   color: white;
 }
+
+/*# sourceMappingURL=styles.css.map */
