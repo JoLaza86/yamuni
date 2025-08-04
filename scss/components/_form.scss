@@ -5,6 +5,7 @@
   gap: 2rem;
   padding: 2rem;
   flex-wrap: wrap; 
+  padding-bottom: 40px;
 }
 
 .formulario-texto,
@@ -19,4 +20,10 @@
   border-radius: 8px;
   display: block;
 }
- 
+ h1 {
+  color: #014080;
+  text-transform: capitalize;
+  font-weight: bold;
+  padding-bottom: 12px;
+  padding-top: 12px;
+ }
